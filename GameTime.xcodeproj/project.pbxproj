@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0D539A28AE800A00650DED /* PlayerClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0D539928AE800A00650DED /* PlayerClock.swift */; };
+		6F0D539E28AE8B9600650DED /* ClockListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0D539D28AE8B9600650DED /* ClockListener.swift */; };
 		6F224837289839B20023D9D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F224836289839B20023D9D2 /* AppDelegate.swift */; };
 		6F224839289839B20023D9D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F224838289839B20023D9D2 /* SceneDelegate.swift */; };
-		6F22483B289839B20023D9D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22483A289839B20023D9D2 /* ViewController.swift */; };
+		6F22483B289839B20023D9D2 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22483A289839B20023D9D2 /* SessionViewController.swift */; };
 		6F22483E289839B20023D9D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F22483C289839B20023D9D2 /* Main.storyboard */; };
 		6F224841289839B20023D9D2 /* GameClock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F22483F289839B20023D9D2 /* GameClock.xcdatamodeld */; };
 		6F224843289839B50023D9D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F224842289839B50023D9D2 /* Assets.xcassets */; };
 		6F224846289839B50023D9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F224844289839B50023D9D2 /* LaunchScreen.storyboard */; };
+		6F890DB528B8E9A0007957F5 /* PlayerAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F890DB428B8E9A0007957F5 /* PlayerAddViewController.swift */; };
+		6FC1EC9828AFB1C4009C922A /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1EC9728AFB1C4009C922A /* SetupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F224833289839B20023D9D2 /* GameClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0D539928AE800A00650DED /* PlayerClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerClock.swift; sourceTree = "<group>"; };
+		6F0D539D28AE8B9600650DED /* ClockListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockListener.swift; sourceTree = "<group>"; };
+		6F224833289839B20023D9D2 /* GameTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F224836289839B20023D9D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F224838289839B20023D9D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F22483A289839B20023D9D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F22483A289839B20023D9D2 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		6F22483D289839B20023D9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F224840289839B20023D9D2 /* GameClock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameClock.xcdatamodel; sourceTree = "<group>"; };
 		6F224842289839B50023D9D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F224845289839B50023D9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F224847289839B50023D9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F890DB428B8E9A0007957F5 /* PlayerAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAddViewController.swift; sourceTree = "<group>"; };
+		6FC1EC9728AFB1C4009C922A /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,10 +47,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F0D539B28AE80B300650DED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F0D539928AE800A00650DED /* PlayerClock.swift */,
+				6F0D539D28AE8B9600650DED /* ClockListener.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F0D539C28AE80C200650DED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6FC1EC9728AFB1C4009C922A /* SetupViewController.swift */,
+				6F890DB428B8E9A0007957F5 /* PlayerAddViewController.swift */,
+				6F22483A289839B20023D9D2 /* SessionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		6F22482A289839B20023D9D2 = {
 			isa = PBXGroup;
 			children = (
-				6F224835289839B20023D9D2 /* GameClock */,
+				6F224835289839B20023D9D2 /* GameTime */,
 				6F224834289839B20023D9D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,32 +77,33 @@
 		6F224834289839B20023D9D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F224833289839B20023D9D2 /* GameClock.app */,
+				6F224833289839B20023D9D2 /* GameTime.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6F224835289839B20023D9D2 /* GameClock */ = {
+		6F224835289839B20023D9D2 /* GameTime */ = {
 			isa = PBXGroup;
 			children = (
+				6F0D539C28AE80C200650DED /* Controller */,
+				6F0D539B28AE80B300650DED /* Model */,
 				6F224836289839B20023D9D2 /* AppDelegate.swift */,
 				6F224838289839B20023D9D2 /* SceneDelegate.swift */,
-				6F22483A289839B20023D9D2 /* ViewController.swift */,
 				6F22483C289839B20023D9D2 /* Main.storyboard */,
-				6F224842289839B50023D9D2 /* Assets.xcassets */,
 				6F224844289839B50023D9D2 /* LaunchScreen.storyboard */,
+				6F224842289839B50023D9D2 /* Assets.xcassets */,
 				6F224847289839B50023D9D2 /* Info.plist */,
 				6F22483F289839B20023D9D2 /* GameClock.xcdatamodeld */,
 			);
-			path = GameClock;
+			path = GameTime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6F224832289839B20023D9D2 /* GameClock */ = {
+		6F224832289839B20023D9D2 /* GameTime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F22484A289839B50023D9D2 /* Build configuration list for PBXNativeTarget "GameClock" */;
+			buildConfigurationList = 6F22484A289839B50023D9D2 /* Build configuration list for PBXNativeTarget "GameTime" */;
 			buildPhases = (
 				6F22482F289839B20023D9D2 /* Sources */,
 				6F224830289839B20023D9D2 /* Frameworks */,
@@ -85,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = GameClock;
+			name = GameTime;
 			productName = GameClock;
-			productReference = 6F224833289839B20023D9D2 /* GameClock.app */;
+			productReference = 6F224833289839B20023D9D2 /* GameTime.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +133,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6F22482E289839B20023D9D2 /* Build configuration list for PBXProject "GameClock" */;
+			buildConfigurationList = 6F22482E289839B20023D9D2 /* Build configuration list for PBXProject "GameTime" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +146,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6F224832289839B20023D9D2 /* GameClock */,
+				6F224832289839B20023D9D2 /* GameTime */,
 			);
 		};
 /* End PBXProject section */
@@ -142,9 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F224841289839B20023D9D2 /* GameClock.xcdatamodeld in Sources */,
-				6F22483B289839B20023D9D2 /* ViewController.swift in Sources */,
+				6F22483B289839B20023D9D2 /* SessionViewController.swift in Sources */,
+				6F0D539E28AE8B9600650DED /* ClockListener.swift in Sources */,
 				6F224837289839B20023D9D2 /* AppDelegate.swift in Sources */,
 				6F224839289839B20023D9D2 /* SceneDelegate.swift in Sources */,
+				6F890DB528B8E9A0007957F5 /* PlayerAddViewController.swift in Sources */,
+				6F0D539A28AE800A00650DED /* PlayerClock.swift in Sources */,
+				6FC1EC9828AFB1C4009C922A /* SetupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +325,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 548ZQR4ZZN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GameClock/Info.plist;
+				INFOPLIST_FILE = GameTime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GameTime;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -304,7 +337,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jlucea.GameClock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlucea.GameTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -321,7 +354,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 548ZQR4ZZN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GameClock/Info.plist;
+				INFOPLIST_FILE = GameTime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GameTime;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,7 +366,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jlucea.GameClock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlucea.GameTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -343,7 +377,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6F22482E289839B20023D9D2 /* Build configuration list for PBXProject "GameClock" */ = {
+		6F22482E289839B20023D9D2 /* Build configuration list for PBXProject "GameTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F224848289839B50023D9D2 /* Debug */,
@@ -352,7 +386,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F22484A289839B50023D9D2 /* Build configuration list for PBXNativeTarget "GameClock" */ = {
+		6F22484A289839B50023D9D2 /* Build configuration list for PBXNativeTarget "GameTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F22484B289839B50023D9D2 /* Debug */,
