@@ -17,6 +17,9 @@
 		6F224843289839B50023D9D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F224842289839B50023D9D2 /* Assets.xcassets */; };
 		6F224846289839B50023D9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F224844289839B50023D9D2 /* LaunchScreen.storyboard */; };
 		6F890DB528B8E9A0007957F5 /* PlayerAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F890DB428B8E9A0007957F5 /* PlayerAddViewController.swift */; };
+		6FA853B928FAF64C005E4EC1 /* TimerStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FA853B828FAF64C005E4EC1 /* TimerStateView.xib */; };
+		6FA853BB28FAF9E7005E4EC1 /* TimerStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA853BA28FAF9E7005E4EC1 /* TimerStateView.swift */; };
+		6FA853BD28FAFA61005E4EC1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA853BC28FAFA61005E4EC1 /* MainViewController.swift */; };
 		6FC1EC9828AFB1C4009C922A /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1EC9728AFB1C4009C922A /* SetupViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		6F224845289839B50023D9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F224847289839B50023D9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F890DB428B8E9A0007957F5 /* PlayerAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAddViewController.swift; sourceTree = "<group>"; };
+		6FA853B828FAF64C005E4EC1 /* TimerStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerStateView.xib; sourceTree = "<group>"; };
+		6FA853BA28FAF9E7005E4EC1 /* TimerStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStateView.swift; sourceTree = "<group>"; };
+		6FA853BC28FAFA61005E4EC1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6FC1EC9728AFB1C4009C922A /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,14 +62,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6F0D539C28AE80C200650DED /* Controller */ = {
+		6F0D539C28AE80C200650DED /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
 				6FC1EC9728AFB1C4009C922A /* SetupViewController.swift */,
 				6F890DB428B8E9A0007957F5 /* PlayerAddViewController.swift */,
 				6F22483A289839B20023D9D2 /* SessionViewController.swift */,
+				6FA853BC28FAFA61005E4EC1 /* MainViewController.swift */,
 			);
-			path = Controller;
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 		6F22482A289839B20023D9D2 = {
@@ -85,8 +92,9 @@
 		6F224835289839B20023D9D2 /* GameTime */ = {
 			isa = PBXGroup;
 			children = (
-				6F0D539C28AE80C200650DED /* Controller */,
+				6F0D539C28AE80C200650DED /* View Controller */,
 				6F0D539B28AE80B300650DED /* Model */,
+				6FA853B728FAF60B005E4EC1 /* View */,
 				6F224836289839B20023D9D2 /* AppDelegate.swift */,
 				6F224838289839B20023D9D2 /* SceneDelegate.swift */,
 				6F22483C289839B20023D9D2 /* Main.storyboard */,
@@ -96,6 +104,15 @@
 				6F22483F289839B20023D9D2 /* GameClock.xcdatamodeld */,
 			);
 			path = GameTime;
+			sourceTree = "<group>";
+		};
+		6FA853B728FAF60B005E4EC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6FA853B828FAF64C005E4EC1 /* TimerStateView.xib */,
+				6FA853BA28FAF9E7005E4EC1 /* TimerStateView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA853B928FAF64C005E4EC1 /* TimerStateView.xib in Resources */,
 				6F224846289839B50023D9D2 /* LaunchScreen.storyboard in Resources */,
 				6F224843289839B50023D9D2 /* Assets.xcassets in Resources */,
 				6F22483E289839B20023D9D2 /* Main.storyboard in Resources */,
@@ -176,7 +194,9 @@
 				6F224839289839B20023D9D2 /* SceneDelegate.swift in Sources */,
 				6F890DB528B8E9A0007957F5 /* PlayerAddViewController.swift in Sources */,
 				6F0D539A28AE800A00650DED /* PlayerClock.swift in Sources */,
+				6FA853BB28FAF9E7005E4EC1 /* TimerStateView.swift in Sources */,
 				6FC1EC9828AFB1C4009C922A /* SetupViewController.swift in Sources */,
+				6FA853BD28FAFA61005E4EC1 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
